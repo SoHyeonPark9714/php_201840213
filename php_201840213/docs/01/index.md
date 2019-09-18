@@ -2,5 +2,5 @@
  수업 내용 정리
 
 화면 캡쳐 .... 
-![img](./imges/img01.bmp);
+![img](./imges/img01.jpg);
 <!-- <img src="./imges.img01.bmp"> -->
