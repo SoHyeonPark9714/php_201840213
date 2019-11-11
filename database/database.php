@@ -23,11 +23,11 @@ class Database
     public function __construct($config)   //생성자 역할
     {
         //테이블 객체 연결
-        $this->Table = new Table($this);
+        $this->Table = new \Module\Database\Table($this);
 
         echo "클래스 생성 <br>";
-        // mysql 접속
-        $this->connect = new mysqli($config['host'], $config['user'], $config['passwd'], $config['database']);
+        // 전역 네임 스페이스
+        $this->connect = new \mysqli($config['host'], $config['user'], $config['passwd'], $config['database']);
         //성공 : connect_errno = 0
         //실패 : connect_errno = 1
         if(!$this->connect->connect_errno){   //connect_errno 는 프로퍼티. 이 값에 에러가 있다면 false.
